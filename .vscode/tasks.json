@@ -10,6 +10,7 @@
                 "/nologo",
                 "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "/Wall",
+                "/std:c++17",
                 "${file}"
             ],
             "options": {
