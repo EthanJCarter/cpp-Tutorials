@@ -7,6 +7,21 @@ int addValues(int(a), int(b))
     return a + b;
 }
 
+int subtractValues(int(a), int(b))
+{
+    return a - b;
+}
+
+int multiplyValues(int(a), int(b))
+{
+    return a * b;
+}
+
+int divideValues(int(a), int(b))
+{
+    return a / b;
+}
+
 /* 
 main function, calls addValues and prints sum of two numbers
 accepted from user input prompted in terminal.
@@ -26,6 +41,15 @@ int main()
 
     //output values
     std::cout << "Sum of " << num1 << " and " << num2 << " is: " << sum << "\n";
+
+    int diff = subtractValues(num1, num2);
+    std::cout << "Difference of " << num1 << " and " << num2 << " is: " << diff << "\n";
+
+    int product = multiplyValues(num1, num2);
+    std::cout << "Product of " << num1 << " and " << num2 << " is: " << product << "\n";
+
+    int ratio = divideValues(num1, num2);
+    std::cout << "Ratio of " << num1 << " and " << num2 << " is: " << ratio << "\n";
 
     return 0;
 }
